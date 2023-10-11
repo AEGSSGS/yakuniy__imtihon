@@ -6,6 +6,13 @@ module.exports = {
       dropShadow:{
         'shadow__box':"-3px 2px 0px rgba(0, 0, 0, 0.25)",
       },
+      boxShadow:{
+        'marked':"0 25px 50px rgba(0, 0, 0, 0.15)",
+        'shadow_after':"185px -185px #4a98bf" 
+      },
+      zIndex:{
+        '1':"-1"
+      },
       backgroundColor:{
         'grey':"rgba(0, 0, 0, 0.20);",
         'banner':"rgba(0, 0, 0, 0.34)",
