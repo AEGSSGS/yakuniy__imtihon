@@ -8,7 +8,8 @@ module.exports = {
       },
       boxShadow:{
         'marked':"0 25px 50px rgba(0, 0, 0, 0.15)",
-        'shadow_after':"185px -185px #4a98bf" 
+        'shadow_after':"185px -185px #4a98bf" ,
+        'hover__card':"-4px 4px 8px 2px rgba(0, 0, 0, 0.25);"
       },
       zIndex:{
         '1':"-1"

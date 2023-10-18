@@ -22,4 +22,5 @@ line-height: normal;
         #card__span::before{
                 @apply content-['Featured'] text-white text-[25px] font-bold leading-normal flex items-center justify-center absolute !w-[150%] !h-[40px]  bg-[#62baea] rotate-[-45deg]  translate-y-[-20px] py-[20px]
         }
+        #card__span:first-child
 }

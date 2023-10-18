@@ -224,7 +224,7 @@
     <section class="info__card py-[78px] bg-[#939393]">
       <div class="hero__container">
         <div class="grid grid-cols-3 items-center justify-between">
-          <a href="" class="max-w-[492px] inline-block mb-[69px]">
+          <a href="" class="max-w-[492px]  hover:shadow-hover__card transition-[1s] pb-[30px] inline-block mb-[69px]">
             <img src="./img/card1.png" alt="" class="flex mb-[69px]" />
             <div class="text__box text-center">
               <h3 class="text-[39px] font-normal leading-normal mb-4">
@@ -240,7 +240,7 @@
             </div>
           </a>
 
-          <a href="" class="max-w-[492px] inline-block mb-[69px]">
+          <a href="" class="max-w-[492px]  hover:shadow-hover__card transition-[1s] pb-[30px] inline-block mb-[69px]">
             <img src="./img/card2.png" alt="" class="flex mb-[69px]" />
             <div class="text__box text-center">
               <h3 class="text-[39px] font-normal leading-normal mb-4">
@@ -255,7 +255,7 @@
               </div>
             </div>
           </a>
-          <a href="" class="max-w-[492px] inline-block mb-[69px]">
+          <a href="" class="max-w-[492px]  hover:shadow-hover__card transition-[1s] pb-[30px] inline-block mb-[69px]">
             <img src="./img/card3.png" alt="" class="flex mb-[69px]" />
             <div class="text__box text-center">
               <h3 class="text-[39px] font-normal leading-normal mb-4">
@@ -271,7 +271,7 @@
             </div>
           </a>
 
-          <a href="" class="max-w-[492px] inline-block">
+          <a href="" class="max-w-[492px]  hover:shadow-hover__card transition-[1s] pb-[30px] inline-block">
             <img src="./img/card4.png" alt="" class="flex mb-[69px]" />
             <div class="text__box text-center">
               <h3 class="text-[39px] font-normal leading-normal mb-4">
@@ -286,7 +286,7 @@
               </div>
             </div>
           </a>
-          <a href="" class="max-w-[492px] inline-block">
+          <a href="" class="max-w-[492px]  hover:shadow-hover__card transition-[1s] pb-[30px] inline-block">
             <img src="./img/card5.png" alt="" class="flex mb-[69px]" />
             <div class="text__box text-center">
               <h3 class="text-[39px] font-normal leading-normal mb-4">
@@ -302,7 +302,7 @@
             </div>
           </a>
 
-          <a href="" class="max-w-[492px] inline-block">
+          <a href="" class="max-w-[492px] hover:shadow-hover__card  transition-[1s] pb-[30px] inline-block">
             <img src="./img/card6.png" alt="" class="flex mb-[69px]" />
             <div class="text__box text-center">
               <h3 class="text-[39px] font-normal leading-normal mb-4">
@@ -393,29 +393,29 @@
           <ul class="flex items-center justify-start gap-[92px]">
             <li>
               <a
-                href=""
+                href="#" id="All"
                 class="text-center text-[31px] font-black leading-normal"
                 >All</a
               >
             </li>
             <li>
               <a
-                href=""
+                href="#" id="New"
                 class="text-center text-[31px] font-black leading-normal"
                 >New</a
               >
             </li>
             <li>
               <a
-                href=""
+                href="#" id="Used"
                 class="text-center text-[31px] font-black leading-normal"
                 >Used</a
               >
             </li>
           </ul>
         </div>
-        <div class="grid grid-cols-2 items-center gap-[30px]">
-          <div class="comment__box bg-[#12232E] max-w-[725px]">
+        <div class="grid grid-cols-2 items-center  gap-[30px]">
+          <div id="first__box"  class=" bg-[#12232E] max-w-[725px]">
             <img src="./img/comment1.png" alt="" />
             <div class="text__box py-[38px] px-[38px]">
               <h3
@@ -439,14 +439,16 @@
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-1">
-            <div class="comment__box max-w-[905px] bg-[#12232E] mb-[50px]">
+          <div class="grid grid-cols-1 gap-[43px]">
+            <div id="second__box" class=" max-w-[905px] bg-[#12232E] ">
               <div class="flex items-center">
-                <img
+                <div class="flex w-full !h-full  object-cover max-w-[313px] max-h-[313px]">
+                  <img
                   src="./img/comment2.png"
                   alt=""
-                  class="w-full h-full max-w-[313px]"
+                  class=""
                 />
+                </div>
                 <div class="text__box pr-[44px] pl-[31px]">
                   <h3
                     class="text-white text-[38px] font-bold leading-normal mb-[19px]"
@@ -470,7 +472,7 @@
                 </div>
               </div>
             </div>
-            <div class="comment__box max-w-[905px] bg-[#12232E]">
+            <div id="third__box" class=" max-w-[905px] bg-[#12232E]">
               <div class="flex items-center">
                 <img
                   src="./img/comment3.png"
@@ -501,25 +503,51 @@
               </div>
             </div>
           </div>
+          <div id="forth__box"  class="comment__box hidden bg-[#12232E] max-w-[725px]">
+            <img class="h-full" src="./img/comment1.png" alt="" />
+            <div class="text__box py-[38px] px-[38px]">
+              <h3
+                class="text-white text-[44px] font-bold leading-normal mb-[25px]"
+              >
+                Etiam Eget
+              </h3>
+              <p
+                class="text-white text-[25px] font-semibold leading-normal mb-[60px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                eget praesent gravida sed rutrum suspendisse eu.
+              </p>
+              <div class="flex items-center gap-[20px]">
+                <img src="./img/profile.svg" alt="" />
+                <strong
+                  class="text-white text-[22px] font-semibold leading-normal"
+                >
+                  By Carla Baptista
+                </strong>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section
       class="rent__car bg-[url('/public/img/bg2.jpg')] bg-grey bg-cover bg-no-repeat w-full"
     >
-      <div class="">
-        <div class="text__box max-w-[684px] ml-auto py-[295px] pr-[15px]">
-          <h2
-            class="text-white text-[52px] font-normal leading-normal mb-[32px]"
-          >
-            Do You Need To Rent A Car?See Our Offers
-          </h2>
-          <a
-            href=""
-            class="text-[#f00] text-[28px] font-normal leading-normal py-[19px] px-[43px] border border-[#f00] inline-block"
-          >
-            View More
-          </a>
+      <div class="container">
+        <div class="">
+          <div class="text__box max-w-[684px] ml-auto py-[295px] ">
+            <h2
+              class="text-white text-[52px] font-normal leading-normal mb-[32px]"
+            >
+              Do You Need To Rent <br> A Car?See Our Offers
+            </h2>
+            <a
+              href=""
+              class="text-[#f00] text-[28px] font-normal leading-normal py-[19px] px-[43px] border border-[#f00] inline-block"
+            >
+              View More
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -1079,12 +1107,14 @@
       <section
         class="offers__bg bg-[url('/public/img/banner.jpg')] bg-cover bg-no-repeat w-full"
       >
-        <div class="text__box max-w-[484px] pt-[197px] pb-[239px] pl-[78px]">
-          <h2 class="text-white text-[52px] font-normal leading-normal">
-            Do You Need To <br />
-            Rent A Car? <br />
-            See Our Offers
-          </h2>
+        <div class="container">
+          <div class="text__box max-w-[484px] pt-[197px] pb-[239px] pl-[48px]">
+            <h2 class="text-white text-[52px] font-normal leading-normal">
+              Do You Need To <br />
+              Rent A Car? <br />
+              See Our Offers
+            </h2>
+          </div>
         </div>
       </section>
     </div>
@@ -1131,6 +1161,7 @@
                   type="text"
                   placeholder="Full Name"
                   class="block py-[17px] pl-[30px] min-w-[608px] bg-[#152836] text-white mb-[25px]"
+                  required
                 />
               </label>
               <label for="">
@@ -1143,6 +1174,7 @@
                   type="email"
                   placeholder="email@Gmail.com"
                   class="block py-[17px] pl-[30px] min-w-[608px] bg-[#152836] text-white mb-[25px]"
+                  required
                 />
               </label>
 
@@ -1156,6 +1188,7 @@
                   type="number"
                   placeholder="000-0000-0000"
                   class="block py-[17px] pl-[30px] min-w-[608px] bg-[#152836] text-white mb-[25px]"
+                  required
                 />
               </label>
 
@@ -1174,14 +1207,14 @@
                   placeholder="Leave a Message here"
                 ></textarea>
               </label>
+              <button type="submit"
+                href="#" id="form__btn"
+                class="text-white text-[15px] text-center font-semibold leading-normal min-w-[604px] mx-auto py-[15px] bg-[#007CC7] block"
+              >
+                Compare Car
+              </button>
             </form>
 
-            <a
-              href=""
-              class="text-white text-[15px] text-center font-semibold leading-normal max-w-[604px] mx-auto py-[15px] bg-[#007CC7] block"
-            >
-              Compare Car
-            </a>
           </div>
         </div>
 
@@ -1344,21 +1377,21 @@
           <img
           src="./img/wolkswagen.jpg"
           alt=""
-          class="w-[229px]"
+          class="w-[229px]" id="img1"
         />
         <img
           src="./img/mercedec.jpg"
           alt=""
-          class="w-[229px]"
+          class="w-[229px]" id="img2"
         />
         <img
           src="./img/lamborgini.jpg"
           alt=""
-          class="w-[229px]"
+          class="w-[229px]" id="img3"
         />
          </div>
         <div class="max-w-[649px]">
-          <img src="./img/fiat.jpg" alt="">
+          <img src="./img/fiat.jpg" alt="" id="img4">
         </div>
         </div>
       </div>
