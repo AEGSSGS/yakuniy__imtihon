@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/public/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -17,21 +17,25 @@
     <section
       class="rent__car bg-[url('/public/img/bg2.jpg')] bg-grey bg-cover bg-no-repeat w-full"
     >
-      <div class="">
-        <div class="text__box max-w-[684px] mr-auto pt-[75px] pb-[249px] pl-[118px]">
-          <a
-        href="./index.html"
-        target="_self"
-        class="mb-[197px] inline-flex gap-2 border-4 border-white text-white py-2 px-2"
-      >
-        <i class="fa-solid fa-arrow-left"></i> HOME
-      </a>
-
-          <h2
-            class="text-white text-[52px] font-normal leading-normal mb-[32px]"
+      <div class="container">
+        <div class="">
+          <div
+            class="text__box max-w-[684px] mr-auto pt-[75px] pb-[249px] pl-[98px]"
           >
-            Do You Need To Rent A Car?See Our Offers
-          </h2>
+            <a
+              href="./index.html"
+              target="_self"
+              class="mb-[197px] inline-flex gap-2 border-4 border-white text-white py-2 px-2"
+            >
+              <i class="fa-solid fa-arrow-left"></i> HOME
+            </a>
+
+            <h2
+              class="text-white text-[52px] font-normal leading-normal mb-[32px]"
+            >
+              Do You Need To Rent A Car?See Our Offers
+            </h2>
+          </div>
         </div>
       </div>
     </section>
@@ -44,10 +48,10 @@
           <div class="flex items-center justify-between">
             <ul class="list flex items-center gap-[62px]">
               <li>
-                <a href="" class="text-[32px] font-black leading-normal">New</a>
+                <a href="#" class="info__card text-[32px] font-black leading-normal">New</a>
               </li>
               <li>
-                <a href="" class="text-[32px] font-black leading-normal"
+                <a href="#" class="info__card text-[32px] font-black leading-normal"
                   >Used</a
                 >
               </li>
@@ -603,24 +607,26 @@
       <section
         class="offers__bg bg-[url('/public/img/banner.jpg')] bg-cover bg-no-repeat w-full"
       >
-        <div class="text__box max-w-[484px] pt-[197px] pb-[239px] pl-[78px]">
-          <h2 class="text-white text-[52px] font-normal leading-normal">
-            Do You Need To <br />
-            Rent A Car? <br />
-            See Our Offers
-          </h2>
+        <div class="container">
+          <div class="text__box max-w-[484px] pt-[197px] pb-[239px] pl-[48px]">
+            <h2 class="text-white text-[52px] font-normal leading-normal">
+              Do You Need To <br />
+              Rent A Car? <br />
+              See Our Offers
+            </h2>
+          </div>
         </div>
       </section>
     </div>
     <section class="contact__info pt-[99px] pb-[105px] bg-[#7D7D7D]">
-      <div class="hero__container">
+      <div class="container">
         <h2
           class="text-[#fff] text-[52px] font-normal leading-normal mb-[57px]"
         >
           Contact Info
         </h2>
 
-        <div class="max-w-[1660px] h-[1px] bg-[#3F3F3F] mb-[101px]"></div>
+        <div class="max-w-[1860px] h-[1px] bg-[#3F3F3F] mb-[101px]"></div>
 
         <div
           class="enter__info bg-[url('/public/img/bg3.png')] bg-grey bg-cover bg-no-repeat w-full flex items-center justify-center gap-[157px] pl-[147px] pr-[133px] mb-[163px]"
@@ -643,7 +649,11 @@
               Contact
             </h3>
 
-            <form action="" class="">
+            <form
+              action="https://formspree.io/f/mrgwrvve"
+              method="POST"
+              class=""
+            >
               <label for="">
                 <h4
                   class="text-white text-[20px] font-medium leading-normal mb-[6px]"
@@ -653,7 +663,9 @@
                 <input
                   type="text"
                   placeholder="Full Name"
+                  name="userName"
                   class="block py-[17px] pl-[30px] min-w-[608px] bg-[#152836] text-white mb-[25px]"
+                  required
                 />
               </label>
               <label for="">
@@ -665,7 +677,9 @@
                 <input
                   type="email"
                   placeholder="email@Gmail.com"
+                  name="userEmail"
                   class="block py-[17px] pl-[30px] min-w-[608px] bg-[#152836] text-white mb-[25px]"
+                  required
                 />
               </label>
 
@@ -678,7 +692,9 @@
                 <input
                   type="number"
                   placeholder="000-0000-0000"
+                  name="userNumber"
                   class="block py-[17px] pl-[30px] min-w-[608px] bg-[#152836] text-white mb-[25px]"
+                  required
                 />
               </label>
 
@@ -697,18 +713,20 @@
                   placeholder="Leave a Message here"
                 ></textarea>
               </label>
+              <button
+                type="submit"
+                value="Send"
+                href="#"
+                id="form__btn"
+                class="text-white text-[15px] text-center font-semibold leading-normal min-w-[604px] mx-auto py-[15px] bg-[#007CC7] block"
+              >
+                Compare Car
+              </button>
             </form>
-
-            <a
-              href=""
-              class="text-white text-[15px] text-center font-semibold leading-normal max-w-[604px] mx-auto py-[15px] bg-[#007CC7] block"
-            >
-              Compare Car
-            </a>
           </div>
         </div>
 
-        <div class="our__service mb-[134px] mx-[65px]">
+        <div class="our__service mb-[134px] mx-[165px]">
           <h2
             class="text-[#d7d7d7] text-[34px] font-bold leading-normal mb-[35px]"
           >
@@ -868,12 +886,22 @@
           class="inline-flex items-end justify-center gap-[59px] mt-[-275px]"
         >
           <div class="inline-flex items-center gap-[71px]">
-            <img src="./img/wolkswagen.jpg" alt="" class="w-[229px]" />
-            <img src="./img/mercedec.jpg" alt="" class="w-[229px]" />
-            <img src="./img/lamborgini.jpg" alt="" class="w-[229px]" />
+            <img
+              src="./img/wolkswagen.jpg"
+              alt=""
+              class="w-[229px]"
+              id="img1"
+            />
+            <img src="./img/mercedec.jpg" alt="" class="w-[229px]" id="img2" />
+            <img
+              src="./img/lamborgini.jpg"
+              alt=""
+              class="w-[229px]"
+              id="img3"
+            />
           </div>
           <div class="max-w-[649px]">
-            <img src="./img/fiat.jpg" alt="" />
+            <img src="./img/fiat.jpg" alt="" id="img4" />
           </div>
         </div>
       </div>
@@ -1020,7 +1048,6 @@
         </p>
       </div>
     </footer>
-
 
     <script src="./js/main.js"></script>
   </body>

@@ -70,6 +70,7 @@ All.addEventListener('click', function(e){
         box1.classList.remove('hidden')
         box2.classList.remove('hidden')
         box3.classList.remove('hidden')
+        box4.classList.add('hidden')
 })
 
 New.addEventListener('click', function(e){
@@ -87,3 +88,35 @@ Used.addEventListener('click', function(e){
         box3.classList.add('block')
         box4.classList.add('hidden')
 })
+
+let body =document.body
+let info__card =document.querySelectorAll('.info__card')
+
+info__card.forEach((items)=>{
+        items.addEventListener('click', function(e){
+                
+
+                body.classList.add('scroll-smooth')
+        })
+})
+
+
+
+var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop:true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+        },
+      });
+
